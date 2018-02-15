@@ -1,3 +1,4 @@
 [submodule "etc/hidapi"]
 	path = etc/hidapi
-	url = https://github.com/signal11/hidapi.git
+	url = https://github.com/dylanmckay/hidapi.git
+	branch = mac-hid-interface-support

@@ -49,6 +49,7 @@ fn compile() {
     gcc::Config::new()
         .file("etc/hidapi/mac/hid.c")
         .include("etc/hidapi/hidapi")
+        .debug(true)
         .compile("libhidapi.a");
     println!("cargo:rustc-link-lib=framework=IOKit");
     println!("cargo:rustc-link-lib=framework=CoreFoundation");
